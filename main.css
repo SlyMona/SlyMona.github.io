@@ -1,0 +1,199 @@
+/* Color Red Used: #9c112f */
+/*-----Global-----*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+html {
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    width: 100%;
+    background-image: url(images/bgTile.png);
+    background-size: 30%;
+    background-repeat: repeat;
+    background-blend-mode: multiply;
+    background-color: grey;
+}
+
+.info {
+    width: 100%;
+    background-image: url(images/Detroit.jpg);
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-color: #9c112f;
+    background-size:cover;
+    background-position: center;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+h1 {
+    color: snow;
+    font-size: 38px;
+}
+
+p {
+    color: ghostwhite;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+    margin-top: 30px;
+}
+
+li {
+    color: snow;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/*-----nav-----*/
+.nav ul {
+    list-style: none;
+    background-color: #222;
+    text-align: center;
+    padding: 0px;
+    margin: 0;
+}
+
+.nav li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    line-height: 40px;
+    height: 40px;
+    border-bottom: 0px solid #888;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: .3s background-color;
+}
+
+.nav a:hover {
+    background-color: #135cc0;
+}
+
+.nav a.active {
+    background-color: snow;
+    color: #444;
+    cursor: default;
+}
+
+@media screen and (min-width: 761px) {
+    .nav li {
+        width: 120px;
+        border-bottom: none;
+        height: 30px;
+        line-height: 50px;
+        font-size: 1.4em;
+    }
+
+    .nav li {
+        display: inline-block;
+        margin-right: -4px;
+    }
+}
+
+nav {
+    height: 100px;
+    line-height: 100px;
+}
+
+nav a {
+    color: snow;
+    text-decoration: none;
+}
+
+nav a img {
+    vertical-align: middle;
+}
+
+nav a:nth-child(1) {
+    
+    float: left;
+}
+
+nav a:nth-child(2) {
+    font-size: 75px;
+    float: left;
+}
+
+nav a:nth-child(3) {
+    float: right;
+    margin-left: 16px;
+    margin-right: 50px;
+}
+
+nav a:nth-child(4) {
+    float: right;
+    margin-left: 16px;
+    height: 50;
+}
+
+nav a:nth-child(5) {
+    float: right;
+    margin-left: 16px;
+}
+
+/*-----header-----*/
+header {
+    margin: 10px 0 100px 0;
+    text-align: center;
+}
+
+header p {
+    width: 60%;
+    margin: 30px auto 0 auto;
+}
+
+/*-----work-----*/
+.work {
+    text-align: center;
+    width: 100%;
+}
+
+.work a img {
+    margin: 1%;
+    width: 60%;
+}
+
+/*-----footer-----*/
+
+/*-----Responsive-----*/
+@media only screen and (max-width: 991px) {
+    header p {
+        width: 100%;
+    }
+
+    .work a img {
+        margin: 2%;
+        width: 96%
+    }
+}
+
+@media only screen and (max-width: 761px) {
+    header {
+        width: 96%;
+        margin: 10px auto 70px auto;
+        text-align: left;
+    }
+}
