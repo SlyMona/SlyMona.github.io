@@ -40,6 +40,11 @@ h1 {
     font-size: 38px;
 }
 
+h2 {
+    color: snow;
+    font-size: 25px;
+}
+
 p {
     color: ghostwhite;
     font-size: 16px;
@@ -54,6 +59,19 @@ li {
     color: snow;
     font-size: 16px;
     margin-bottom: 20px;
+}
+
+.download{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    height: 40px;
+    width: 90px;
+    transition: .3s background-color;
+    margin: 20px;
+}
+.download:hover{
+    background-color: #135cc0;
 }
 
 /*-----nav-----*/
@@ -164,6 +182,17 @@ header {
     background-blend-mode: multiply;
     background-color: #9c112f;
     background-size: cover;
+}
+
+.workcol {
+    float: left;
+    width: 33.33%;
+}
+
+.workrow:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 header p {
