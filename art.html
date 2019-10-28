@@ -5,8 +5,12 @@
     <title>NeoHeir Portfolio</title>
     <meta charset="utf-8">
     <meta name="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="script.min.js"></script>
+    <link rel="stylesheet" href="style.min.css">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -28,14 +32,17 @@
                 <li class="Contact"><a href="mailto:neoheir@gmail.com">Contact</a></li>
             </ul>
         </div>
-        <header>
-            </br></br>
-            <h1>Art</h1>
-            <p>Most work is now done digitally, but I can still use more analog methods if I need/want to.</p>
-        </header>
-        <div class="work">
-            <a href="#"><img src="images/Zimomorph.png" alt="Invader Zim/Xenomorph Fusion" width="500"></a>
-            <a href="#"><img src="images/gremblo%20eats%20an%20egg.png" alt="Gremble Eats an Egg Painting" width="500"></a>
-        </div>
+        <ul class="bo-slider">
+            <li data-url="images/Zimomorph.png" data-type="image"></li>
+            <li data-url="images/gremblo%20eats%20an%20egg.png" data-type="image"></li>
+        </ul>
+        <script type="text/javascript">
+            $(function() {
+                $('.bo-slider').boSlider({
+                    animation: "fade",
+                    interval: 18000
+                });
+            });
+        </script>
     </div>
 </body></html>

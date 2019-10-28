@@ -5,6 +5,9 @@
     <title>NeoHeir Portfolio</title>
     <meta charset="utf-8">
     <meta name="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="script.min.js"></script>
+    <link rel="stylesheet" href="style.min.css">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 </head>
@@ -28,16 +31,20 @@
                 <li class="Contact"><a href="mailto:neoheir@gmail.com">Contact</a></li>
             </ul>
         </div>
-        <header>
-            </br></br>
-            <h1>Graphic and Game Design</h1>
-            <p>I’m a programmer and graphic designer. I’m finishing my senior year at University of Michigan with a major in Computer Science and a concentration on Game Design. I’m very familiar with C++, Java, and C#. I’ve made game prototypes in both Unity and Unreal Engine. I am also proficient with the Adobe Creative Suite, Clip Studio Paint, and Procreate. Have made logos professionally for over 6 years now.</p>
-        </header>
-        <div class="work">
-            <a href="#"><img src="images/HookHeistLogo.png" alt="Hook Heist Game" width="500"></a>
-            <a href="#"><img src="images/YeetTourney%20Logo.png" alt="YeetTourney Logo WIP" width="500"></a>
-            <a href="#"><img src="images/kingpin%20logo.png" alt="Kingpin Logo" width="500"></a>
-            <a href="#"><img src="images/YouTube%20Iso%20Logo.png" alt="Hypothetical Youtube Logo Redesign" width="500"></a>
-        </div>
+        <ul class="bo-slider">
+            <li data-url="images/HookHeistLogo.png" data-type="image"></li>
+            <li data-url="images/Logo-W-Blue.png" data-type="image"></li>
+            <li data-url="images/YeetTourney%20Logo.png" data-type="image"></li>
+            <li data-url="images/GA%20Plat%20Logo.png" data-type="image"></li>
+            <li data-url="images/kingpin%20logo.png" data-type="image"></li>
+            <li data-url="images/YouTube%20Iso%20Logo.png" data-type="image"></li>
+        </ul>
+        <script type="text/javascript">
+            $(function() {
+                $('.bo-slider').boSlider({
+                    animation:"fade", interval: 18000
+                });
+            });
+        </script>
     </div>
 </body></html>
