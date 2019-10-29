@@ -29,6 +29,11 @@ body {
     margin: 0 auto;
 }
 
+.bttnwrapper {
+    width: 50%;
+    margin: 0 auto;
+}
+
 .clearfix::after {
     content: "";
     clear: both;
@@ -37,7 +42,7 @@ body {
 
 h1 {
     color: snow;
-    font-size: 38px;
+    font-size: 60px;
 }
 
 h2 {
@@ -61,16 +66,26 @@ li {
     margin-bottom: 20px;
 }
 
-.download{
+.bttn {
     font-family: 'Oswald', sans-serif;
     font-size: 1.2em;
     text-align: center;
     height: 40px;
     width: 90px;
     transition: .3s background-color;
-    margin: 20px;
+    margin: 10px;
 }
-.download:hover{
+
+.big {
+    font-size: 1.8em;
+    text-align: left;
+    height: 50px;
+    width: 150px;
+    transition: .3s background-color;
+    margin: 15px;
+}
+
+.bttn:hover {
     background-color: #135cc0;
 }
 
@@ -126,6 +141,8 @@ li {
 nav {
     height: 100px;
     line-height: 100px;
+    margin-bottom: 12.5px;
+    margin-top: 12.5px
 }
 
 nav a {
@@ -170,6 +187,9 @@ header {
     text-align: center;
     width: 100%;
     height: 100%;
+    background-image: linear-gradient(rgba(34, 34, 34, 1), rgba(19, 92, 192, .5));
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .info {
@@ -177,11 +197,7 @@ header {
     text-align: center;
     width: 100%;
     height: 100%;
-    background-image: url(images/Detroit.jpg);
-    background-repeat: no-repeat;
-    background-blend-mode: multiply;
-    background-color: #9c112f;
-    background-size: cover;
+
 }
 
 .workcol {
@@ -195,8 +211,19 @@ header {
     clear: both;
 }
 
+.workcol2 {
+    float: left;
+    width: 50%;
+}
+
+.workrow2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 header p {
-    width: 60%;
+    width: 50%;
     margin: 30px auto 0 auto;
 }
 
@@ -216,12 +243,15 @@ header p {
 /*-----Responsive-----*/
 @media only screen and (max-width: 991px) {
     header p {
-        width: 100%;
+        width: 75%;
     }
 
     .work a img {
         margin: 2%;
         width: 96%
+    }
+        .bttnwrapper {
+        width: 75%;
     }
 }
 
